@@ -23,3 +23,45 @@
     /* copying behavior of official site */
     max-width: 200px;
 }
+
+.experience .img-card {
+    background-image: url(https://picsum.photos/400/400);
+    /* image from https://picsum.photos/, random photos are genereted each time */
+    padding-top: calc(4.5 / 4 * 100%);
+    /* portrait aspect ratio */
+    background-size: cover;
+    background-position: center;
+}
+@media (min-width: 992px) and (max-width: 1199px) {
+    .experience {
+        width: 20%;
+    }
+}
+.best .img-card {
+    background-image: url(https://picsum.photos/399/399);
+}
+.weekend .img-card {
+    background-image: url(https://picsum.photos/401/401);
+}
+.groups .img-card {
+    background-image: url(https://picsum.photos/398/398);
+}
+.starting .img-card-wrapper {
+    /* we need to set the width on the wrapper <div> because the aspect ratio box padding top is based on this value */
+    width: 120px;
+    max-width: 120px;
+    flex-shrink: 0;
+}
+
+.starting .img-card {
+    background-image: url(https://picsum.photos/398/398);
+    /* image from https://picsum.photos/, random photos are genereted each time */
+    padding-top: calc(5 / 4 * 100%);
+    /* a slightly longer portrait aspect ratio */
+    background-size: cover;
+    background-position: center;
+}
+
+.starting .text-box {
+    font-size: 0.9rem;
+}
